@@ -6,3 +6,4 @@ print(27)
 
 print"howdy"
 
+type(33.8)
