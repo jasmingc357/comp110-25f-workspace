@@ -15,11 +15,11 @@ def check_fisrt_letter(word: str, letter: str) -> str:
         # "no match!"
 
 
-print(check_fisrt_letter(word="hello", letter="h"))
+# print(check_fisrt_letter(word="hello", letter="h"))
 # Should return True
 
 
-print(check_fisrt_letter(word="hello", letter="l"))
+# print(check_fisrt_letter(word="hello", letter="l"))
 
 
 # Write a function called get_weather_report that takes weather: str as input
@@ -44,6 +44,29 @@ def get_weather_report(weather: str) -> str:
     return weather
 
 
-get_weather_report("cold")
+# get_weather_report("cold")
 
-get_weather_report(weather=input("What is the weather?"))
+# get_weather_report(weather=input("What is the weather?"))
+
+
+# practice defining the function again here!
+
+
+def get_weather_report(weather: str) -> str:
+    """this would check wether then give action for it depending on what it is."""
+    if weather == "rainy" or weather == "cold":
+        print("Bring a jacket!")
+    elif weather == "hot":
+        print("Keep cool out there!")
+    else:
+        print("I dont recognize this weather.")
+    return weather
+
+
+# get_weather_report(weather="cold")
+
+
+# Now, use the input function to ask the user “What is the weather?” and pass
+# that as the argument to get_weather_report
+
+get_weather_report(weather=input("what is the weather?"))
